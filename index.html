@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Me amas?</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    function f1(){
+    	alert("Gracias por aceptar de ahora en adelante cuidare ese corazón tan hermoso que tienes ") 
+    } 
+    var flag=1;
+    function f(){ 
+    	var Bn = document.getElementById('Bn');
+    	var aWidth= document.body.clientWidth || document.documentElement.clientWidth;
+    	var aHeight= document.body.clientHeight || document.documentElement.clientHeight;
+    	var sJs1=Math.floor(Math.random()*aHeight);
+    	var sJs2=Math.floor(Math.random()*aWidth);
+    	if(flag==1){
+    		Bn.style.top=sJs1 + 'px';
+    		Bn.style.left=sJs2+'px'; 
+    		flag=2;
+    		
+    	}else if(flag==2){
+    		Bn.style.top=sJs1+'px';
+    		Bn.style.left=sJs2+'px';
+    		flag=3;
+    	}else if(flag==3){
+    	Bn.style.top=235 + 'px';
+    		Bn.style.left=286 + 'px';
+    		flag=4;
+    	}else if(flag==4){
+    		Bn.style.top=235 + 'px';
+    		Bn.style.left=360 + 'px';
+    		flag=1;
+    	}
+    }
+    function f2(){
+    		alert('que tristeza que no me amas, gracias por ser tan sincera conmigo');
+    	}
+  </script>
+  
+</head>
+
+<body>
+    
+    <h1 style="position:absolute; left:220px; top:100px; width:auto; height:210px;">Quieres ser mi princesa, mi reina para recorrer los mares y conquistarlos a tu lado?</h1>
+    <br>
+    <br>
+  <h1 style="position:absolute; left:220px; top:200px; width:auto; height:210px;">Que dices aceptas?</h1>
+  <br>
+  <br>
+  <div id="By" style="position:absolute; left:285px; top:300px;">
+    <input type="button" value=" SI " onclick="f1()">
+  </div>
+  <div id="Bn" style="position:absolute; left:360px; top:300px;">
+    <input type="button" value=" No " onmouseover="f()" onclick="f2()">
+  </div>
+  <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    
+  </div>
+ 
+</body>
+
+</html>

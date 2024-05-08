@@ -1,2 +1,0 @@
-# parati
-pagina amorosa
